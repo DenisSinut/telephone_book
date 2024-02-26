@@ -4,6 +4,7 @@ from prettytable import PrettyTable
 
 def load_book():
     '''Функция для загрузки справочника в список из файла'''
+
     try:
         with open("data.csv", "r", newline="") as book_list:
             return list(csv.reader(book_list))
